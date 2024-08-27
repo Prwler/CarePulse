@@ -5,18 +5,18 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-//export const parseStringify = (value: any) => JSON.parse(JSON.stringify(value));
-export const parseStringify = (data: unknown) => {
-  if (data === undefined || data === null) {
-    return null; // or undefined, depending on what you prefer
-  }
-  try {
-    return JSON.parse(JSON.stringify(data));
-  } catch (error) {
-    console.error("Error in parseStringify:", error);
-    return null; // or return the original data if you prefer
-  }
-};
+export const parseStringify = (value: any) => JSON.parse(JSON.stringify(value));
+// export const parseStringify = (data: unknown) => {
+//   if (data === undefined || data === null) {
+//     return null; // or undefined, depending on what you prefer
+//   }
+//   try {
+//     return JSON.parse(JSON.stringify(data));
+//   } catch (error) {
+//     console.error("Error in parseStringify:", error);
+//     return null; 
+//   }
+// };
 
 export const convertFileToUrl = (file: File) => URL.createObjectURL(file);
 

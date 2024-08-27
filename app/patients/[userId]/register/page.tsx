@@ -1,5 +1,6 @@
 import RegisterForm from "@/components/forms/RegisterForm";
 import { getUser } from "@/lib/actions/patient.actions";
+import { SearchParamProps } from "@/types";
 import Image from "next/image";
 import React from "react";
 

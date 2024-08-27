@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import React from 'react'
 import Image from 'next/image'
+import { StatCardProps } from '@/types'
 
 const StatCard = ({count=0, label, icon, type}: StatCardProps) => {
   return (
